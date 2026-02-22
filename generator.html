@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteVisuals – Generatore Avanzato</title>
+    <link rel="stylesheet" href="generator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="logo">EliteVisuals</h1>
+    </header>
+
+    <section class="generator-container">
+        <h2 class="page-title">Generatore Avanzato</h2>
+        <p class="subtitle">La tua prima immagine è gratuita. Personalizza ogni dettaglio.</p>
+
+        <form id="generatorForm" class="form-box">
+
+            <label>Titolo Evento</label>
+            <input type="text" id="title" placeholder="Es. Aperitivo Deluxe">
+
+            <label>Sottotitolo</label>
+            <input type="text" id="subtitle" placeholder="Es. Ogni Venerdì dalle 19:00">
+
+            <label>Tipo di Locale</label>
+            <select id="venueType">
+                <option value="ristorante">Ristorante</option>
+                <option value="discoteca">Discoteca</option>
+                <option value="bar">Bar</option>
+                <option value="pub">Pub</option>
+                <option value="evento">Evento Speciale</option>
+            </select>
+
+            <label>Stile Grafico</label>
+            <select id="style">
+                <option value="luxury">Luxury</option>
+                <option value="minimal">Minimal</option>
+                <option value="modern">Moderno</option>
+                <option value="bold">Bold</option>
+            </select>
+
+            <label>Colori Preferiti</label>
+            <input type="text" id="colors" placeholder="Es. oro, nero, bianco">
+
+            <label>Formato</label>
+            <select id="format">
+                <option value="quadrato">Quadrato (1080x1080)</option>
+                <option value="verticale">Verticale (1080x1920)</option>
+                <option value="a4">A4 (per stampa)</option>
+            </select>
+
+            <label>Intensità Effetti</label>
+            <input type="range" id="effects" min="1" max="10" value="5">
+
+            <button type="button" id="generateBtn" class="generate-button">
+                Genera Immagine
+            </button>
+
+        </form>
+
+        <div id="resultBox" class="result-box hidden">
+            <h3>Risultato</h3>
+            <div id="imagePlaceholder" class="image-placeholder">
+                L'immagine generata apparirà qui.
+            </div>
+
+            <button id="downloadBtn" class="download-button">
+                Scarica (Gratis per la prima immagine)
+            </button>
+        </div>
+
+    </section>
+
+    <script src="generator.js"></script>
+
+</body>
+</html>
