@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+    color: #0C0C0C;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+
+.dashboard-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* BOX GENERALI */
+.credits-box, .free-box, .history-box {
+    border: 1px solid #D4AF37;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    background-color: #FFFFFF;
+}
+
+.credits-number {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 10px 0 20px;
+}
+
+.buy-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0C0C0C;
+    color: #D4AF37;
+    border: 1px solid #D4AF37;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #1A1A1A;
+}
+
+/* STORICO */
+.history-list {
+    margin-top: 20px;
+}
+
+.history-item {
+    padding: 15px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.history-item:last-child {
+    border-bottom: none;
+}
+
+.empty {
+    opacity: 0.6;
+}
