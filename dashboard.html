@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteVisuals – Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="logo">EliteVisuals</h1>
+    </header>
+
+    <section class="dashboard-container">
+
+        <h2 class="page-title">Dashboard Utente</h2>
+
+        <!-- CREDITI -->
+        <div class="credits-box">
+            <h3>Crediti Disponibili</h3>
+            <p id="creditsCount" class="credits-number">0</p>
+            <a href="checkout.html" class="buy-button">Acquista Crediti</a>
+        </div>
+
+        <!-- FREE GENERATION -->
+        <div class="free-box">
+            <h3>Prima Immagine Gratuita</h3>
+            <p id="freeStatus">Non utilizzata</p>
+        </div>
+
+        <!-- STORICO -->
+        <div class="history-box">
+            <h3>Storico Immagini Generate</h3>
+            <div id="historyList" class="history-list">
+                <p class="empty">Nessuna immagine generata.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
