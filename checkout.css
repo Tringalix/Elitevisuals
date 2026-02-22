@@ -7,7 +7,7 @@ body {
 
 /* LOGO */
 .logo {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 400;
     margin: 0;
     letter-spacing: 1px;
@@ -28,31 +28,30 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 15px 20px;
     border-bottom: 1px solid #E5E5E5;
 }
 .navbar nav a {
-    margin-left: 20px;
+    margin-left: 12px;
     text-decoration: none;
     color: #0C0C0C;
     font-weight: 500;
+    font-size: 0.9rem;
 }
 .login-btn {
-    padding: 8px 16px;
+    padding: 6px 12px;
     border: 1px solid #D4AF37;
     color: #D4AF37;
     border-radius: 4px;
-}
-.login-btn:hover {
-    background-color: #D4AF37;
-    color: #0C0C0C;
+    font-size: 0.85rem;
 }
 
 /* CHECKOUT */
 .checkout-container {
     max-width: 900px;
-    margin: 60px auto;
+    margin: 50px auto;
     text-align: center;
+    padding: 0 20px;
 }
 
 .plans {
@@ -60,12 +59,13 @@ body {
     justify-content: center;
     gap: 30px;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .plan {
     border: 1px solid #D4AF37;
-    padding: 30px;
-    width: 250px;
+    padding: 25px;
+    width: 240px;
     border-radius: 8px;
     background-color: #FFFFFF;
 }
@@ -82,13 +82,38 @@ button {
     border: 1px solid #D4AF37;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 /* FOOTER */
 .footer {
     text-align: center;
-    padding: 30px;
+    padding: 25px;
     background-color: #0C0C0C;
     color: #FFFFFF;
     margin-top: 60px;
+    font-size: 0.9rem;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .plans {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    .navbar nav a {
+        margin-left: 8px;
+        font-size: 0.8rem;
+    }
 }
