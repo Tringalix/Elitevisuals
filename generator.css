@@ -5,48 +5,81 @@ body {
     color: #0C0C0C;
 }
 
-.header {
-    padding: 20px;
-    text-align: center;
+/* LOGO + NAVBAR + FOOTER (stesso stile della home) */
+.logo {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 1px;
+}
+.logo .elite {
+    font-family: 'Playfair Display', serif;
+    color: #D4AF37;
+    font-weight: 600;
+}
+.logo .visuals {
+    font-family: 'Inter', sans-serif;
+    color: #0C0C0C;
+    margin-left: 4px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
     border-bottom: 1px solid #E5E5E5;
 }
-
-.logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+.navbar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #0C0C0C;
+    font-weight: 500;
+}
+.login-btn {
+    padding: 8px 16px;
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+    border-radius: 4px;
+}
+.login-btn:hover {
+    background-color: #D4AF37;
+    color: #0C0C0C;
+}
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #0C0C0C;
+    color: #FFFFFF;
+    margin-top: 60px;
 }
 
+/* GENERATOR */
 .generator-container {
     max-width: 700px;
     margin: 40px auto;
     padding: 20px;
 }
-
 .page-title {
     font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
     text-align: center;
 }
-
 .subtitle {
     text-align: center;
     margin-bottom: 40px;
     opacity: 0.7;
 }
-
 .form-box {
     border: 1px solid #D4AF37;
     padding: 30px;
     border-radius: 8px;
     background-color: #FFFFFF;
 }
-
 label {
     display: block;
     margin-top: 20px;
     font-weight: 600;
 }
-
 input, select {
     width: 100%;
     padding: 12px;
@@ -55,7 +88,6 @@ input, select {
     border-radius: 4px;
     font-size: 1rem;
 }
-
 .generate-button {
     width: 100%;
     margin-top: 30px;
@@ -68,11 +100,9 @@ input, select {
     cursor: pointer;
     transition: 0.3s;
 }
-
 .generate-button:hover {
     background-color: #1A1A1A;
 }
-
 .result-box {
     margin-top: 40px;
     padding: 30px;
@@ -80,11 +110,9 @@ input, select {
     border-radius: 8px;
     background-color: #F8F8F8;
 }
-
 .hidden {
     display: none;
 }
-
 .image-placeholder {
     height: 300px;
     background-color: #1A1A1A;
@@ -94,7 +122,6 @@ input, select {
     align-items: center;
     margin-bottom: 20px;
 }
-
 .download-button {
     width: 100%;
     padding: 14px;
