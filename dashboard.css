@@ -5,31 +5,66 @@ body {
     color: #0C0C0C;
 }
 
-.header {
-    padding: 20px;
-    text-align: center;
+/* LOGO + NAVBAR + FOOTER */
+.logo {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 1px;
+}
+.logo .elite {
+    font-family: 'Playfair Display', serif;
+    color: #D4AF37;
+    font-weight: 600;
+}
+.logo .visuals {
+    font-family: 'Inter', sans-serif;
+    color: #0C0C0C;
+    margin-left: 4px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
     border-bottom: 1px solid #E5E5E5;
 }
-
-.logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+.navbar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #0C0C0C;
+    font-weight: 500;
+}
+.login-btn {
+    padding: 8px 16px;
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+    border-radius: 4px;
+}
+.login-btn:hover {
+    background-color: #D4AF37;
+    color: #0C0C0C;
+}
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #0C0C0C;
+    color: #FFFFFF;
+    margin-top: 60px;
 }
 
+/* DASHBOARD */
 .dashboard-container {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
 }
-
 .page-title {
     font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
     text-align: center;
     margin-bottom: 40px;
 }
-
-/* BOX GENERALI */
 .credits-box, .free-box, .history-box {
     border: 1px solid #D4AF37;
     padding: 30px;
@@ -37,13 +72,11 @@ body {
     margin-bottom: 40px;
     background-color: #FFFFFF;
 }
-
 .credits-number {
     font-size: 3rem;
     font-weight: 700;
     margin: 10px 0 20px;
 }
-
 .buy-button {
     display: inline-block;
     padding: 12px 24px;
@@ -54,25 +87,19 @@ body {
     text-decoration: none;
     transition: 0.3s;
 }
-
 .buy-button:hover {
     background-color: #1A1A1A;
 }
-
-/* STORICO */
 .history-list {
     margin-top: 20px;
 }
-
 .history-item {
     padding: 15px;
     border-bottom: 1px solid #E5E5E5;
 }
-
 .history-item:last-child {
     border-bottom: none;
 }
-
 .empty {
     opacity: 0.6;
 }
