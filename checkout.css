@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+    color: #0C0C0C;
+}
+
+/* LOGO */
+.logo {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 1px;
+}
+.logo .elite {
+    font-family: 'Playfair Display', serif;
+    color: #D4AF37;
+    font-weight: 600;
+}
+.logo .visuals {
+    font-family: 'Inter', sans-serif;
+    color: #0C0C0C;
+    margin-left: 4px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.navbar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #0C0C0C;
+    font-weight: 500;
+}
+.login-btn {
+    padding: 8px 16px;
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+    border-radius: 4px;
+}
+.login-btn:hover {
+    background-color: #D4AF37;
+    color: #0C0C0C;
+}
+
+/* CHECKOUT */
+.checkout-container {
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.plan {
+    border: 1px solid #D4AF37;
+    padding: 30px;
+    width: 250px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+.price {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #0C0C0C;
+    color: #D4AF37;
+    border: 1px solid #D4AF37;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #0C0C0C;
+    color: #FFFFFF;
+    margin-top: 60px;
+}
